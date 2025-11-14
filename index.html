@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PACER FORCE C2</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACER FORGE C2</title>
 
-    <!-- Firebase SDKs -->
+    <!-- Firebase v8 CDN scripts (REQUIRED for GitHub Pages) -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <!-- Tailwind (optional: remove if you are not using it yet) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body { background-color: #0f1115; color: white; font-family: sans-serif; }
+        #loading { padding: 40px; text-align: center; font-size: 1.5rem; }
+    </style>
 </head>
 
 <body>
-    <h1>PACER FORCE C2</h1>
-    <p id="status">Loading...</p>
 
+    <h1 class="text-center text-3xl font-bold mt-6">PACER FORGE C2</h1>
+    <div id="loading">Loading...</div>
+
+    <!-- Firebase init -->
     <script src="firebase.js"></script>
+
+    <!-- Your main app logic -->
     <script src="app.js"></script>
+
 </body>
 </html>
