@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PACER FORCE C2</title>
-
-    <!-- Load CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 style="color:white;">PACER FORCE C2 — GitHub Pages Connected</h1>
-    <p style="color:white;">If you can see this, hosting works.</p>
 
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <h1>PACER FORCE C2</h1>
+    <p id="status">Loading...</p>
+
+    <script src="firebase.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
