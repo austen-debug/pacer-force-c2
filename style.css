@@ -1,1 +1,12 @@
+body {
+  background: #0d1117;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
