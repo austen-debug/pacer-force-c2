@@ -1,6 +1,12 @@
-console.log("PACER FORCE C2 app.js loaded");
+console.log("app.js loaded");
 
-// TEMPORARY SAFE VERSION
-document.body.style.background = "#111";
-document.body.style.color = "white";
-document.body.innerHTML += "<p>app.js is running successfully.</p>";
+db.collection("test")
+  .add({ message: "PACER FORCE C2 online", timestamp: Date.now() })
+  .then(() => {
+      document.getElementById("status").textContent = "Firestore connected ✔";
+      console.log("Test write OK");
+  })
+  .catch(err => {
+      document.getElementById("status").textContent = "Firestore FAILED ❌";
+      console.error(err);
+  });
