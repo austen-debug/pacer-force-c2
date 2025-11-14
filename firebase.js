@@ -1,4 +1,5 @@
 // Firebase v8 initialization for GitHub Pages
+console.log("firebase.js loaded.");
 
 var firebaseConfig = {
   apiKey: "AIzaSyBqCE7KQMcMyYxbcwrRhWUO2ZFX1pNJVPI",
