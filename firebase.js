@@ -1,4 +1,4 @@
-// Firebase v8 CDN initialization (required for GitHub Pages)
+// Firebase v8 initialization for GitHub Pages
 
 var firebaseConfig = {
   apiKey: "AIzaSyBqCE7KQMcMyYxbcwrRhWUO2ZFX1pNJVPI",
@@ -12,4 +12,9 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+// Global Firestore reference
 var db = firebase.firestore();
+
+console.log("Firebase initialized.");
